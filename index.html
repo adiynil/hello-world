@@ -5,10 +5,147 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
+		<style>
+			section {
+				height: 150px;
+			}
+			.box {
+				background-color: rgb(224, 206, 247);
+				border: 5px solid rebeccapurple;
+			}
+			.box[style] {
+				background-color: aliceblue;
+				border: 5px solid steelblue;
+			}
+			.float {
+				float: left;
+				overflow: hidden; /* required by resize:both */
+				resize: both;
+				margin-right: 25px;
+				width: 200px;
+				height: 100px;
+				background-color: rgba(255, 255, 255, 0.75);
+				border: 1px solid black;
+				padding: 10px;
+			}
+		</style>
+		<!-- <style>
+			.parent {
+				background-color: #80b3ff;
+				/* text-align: center; */
+				position: relative;
+				/* display: flex; */
+				/* align-items: center; */
+				/* justify-content: space-around; */
+				/* vertical-align: middle; */
+				width: 1000px;
+				height: 800px;
+				/* line-height: 400px; */
+			}
+			.son {
+				background-color: #dc4e42;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				/* display: inline; */
+				width: 200px;
+				height: 200px;
+				/* transform: rotateX(0deg); */
+				box-shadow: 15px 15px 20px #303133;
+				/* margin: 0 auto; */
+				margin-left: -100px;
+				margin-top: -100px;
+			}
+		</style> -->
 	</head>
 	<body>
-		<section id="parent">
-			<section id="son"></section>
+		<!-- <section class="parent">
+			<section class="son">son</section>
+			<section class="son">son</section>
+		</section> -->
+		<section
+			style="width: 200px; height: 100px; background-color: gray; float: left"
+		></section>
+		<section
+			style="height: 100px; background-color: lightblue; margin-left: 210px"
+		></section>
+		<hr />
+		<section
+			style="
+				width: 200px;
+				height: 100px;
+				background-color: gray;
+				margin-right: 10px;
+				float: left;
+			"
+		></section>
+		<section
+			style="height: 100px; background-color: lightblue; overflow: hidden"
+		></section>
+		<hr />
+		<section
+			style="
+				width: 200px;
+				height: 100px;
+				background-color: gray;
+				margin-right: 10px;
+				float: left;
+			"
+		></section>
+		<section style="height: 100px; background-color: lightblue"></section>
+		<hr />
+		<div style="padding-left: 220px">
+			<section
+				style="
+					width: 100%;
+					height: 200px;
+					background-color: gray;
+					margin-left: -220px;
+					float: left;
+				"
+			>
+				haha
+			</section>
+			<section
+				style="
+					width: 200px;
+					height: 100px;
+					background-color: lightblue;
+					float: right;
+				"
+			></section>
+		</div>
+
+		<hr />
+		<!-- <section
+			style="width: 600px; height: 100px; background-color: yellow"
+		></section>
+		<section
+			style="
+				width: 200px;
+				height: 100px;
+				background-color: lightblue;
+				float: left;
+			"
+		></section>
+		<section
+			style="width: 400px; height: 100px; background-color: red; float: left"
+		></section>
+		<section
+			style="width: 600px; height: 120px; background-color: blue"
+		></section> -->
+		<!-- <hr />
+		<section>
+			<div class="float">Try to resize this outer float</div>
+			<div class="box"><p>Normal</p></div>
 		</section>
+		<section>
+			<div class="float">Try to resize this outer float</div>
+			<div class="box" style="display: flow-root">
+				<p><code>display:flow-root</code></p>
+				<p></p>
+			</div>
+		</section> -->
+		<script></script>
 	</body>
 </html>
